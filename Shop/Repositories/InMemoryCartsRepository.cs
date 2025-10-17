@@ -8,7 +8,7 @@ public interface ICartRepository
     public void Add(Product? product, string userId);
     static List<Cart> Carts;
 }
-public class CartRepository:ICartRepository
+public class InMemoryCartsRepository:ICartRepository
 {
     static List<Cart> _carts = [];
 

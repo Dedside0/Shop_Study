@@ -11,7 +11,7 @@ namespace Shop.Repositories
         static List<Product> Products;
 
     }
-    public class ProductRepository: IProductRepository
+    public class InMemoryProductRepository: IProductRepository
     {
         private static int _instanceCounter = 0;
         private static readonly List<Product> _products =

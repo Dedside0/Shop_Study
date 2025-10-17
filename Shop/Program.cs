@@ -10,8 +10,8 @@ namespace Shop
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            builder.Services.AddScoped<IProductRepository, ProductRepository>();
-            builder.Services.AddScoped<ICartRepository, CartRepository>();
+            builder.Services.AddScoped<IProductRepository, InMemoryProductRepository>();
+            builder.Services.AddScoped<ICartRepository, InMemoryCartsRepository>();
 
             var app = builder.Build();
 
