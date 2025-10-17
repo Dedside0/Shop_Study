@@ -30,15 +30,15 @@ namespace Shop.Controllers
 
         public IActionResult Remove(int productId)
         {
-            var product = ProductRepository.GetById(productId);
-            CartRepository.Remove(product,Constants.UserId);
+            var product = _productRepository.GetById(productId);
+            _cartRepository.Remove(product,Constants.UserId);
 
             return RedirectToAction("Index");
         }
 
         public IActionResult Clear(string userId)
         {
-            CartRepository.Clear(userId);
+            _cartRepository.Clear(userId);
 
             return RedirectToAction("Index");
         }

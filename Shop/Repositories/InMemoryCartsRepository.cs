@@ -7,6 +7,9 @@ public interface ICartRepository
     Cart? TryGetById(string userId);
     public void Add(Product? product, string userId);
     static List<Cart> Carts;
+    void Clear(string id);
+    void DeleteCartItem(Cart cart, CartItem cartItem);
+    void Remove(Product? product, string userId);
 }
 public class InMemoryCartsRepository:ICartRepository
 {
@@ -61,7 +64,7 @@ public class InMemoryCartsRepository:ICartRepository
         }
     }
 
-    public static void Remove(Product? product, string userId)
+    public void Remove(Product? product, string userId)
     {
         var existingCart = TryGetById(userId);
 
@@ -79,12 +82,12 @@ public class InMemoryCartsRepository:ICartRepository
         }
     }
 
-    public static void DeleteCartItem(Cart cart,CartItem cartItem)
+    public void DeleteCartItem(Cart cart,CartItem cartItem)
     {
         cart.Items.Remove(cartItem);
     }
 
-    public static void Clear(string id)
+    public void Clear(string id)
     {
         var existingCart = TryGetById(id);
         if(existingCart != null) 
