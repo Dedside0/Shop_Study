@@ -13,7 +13,7 @@
 				<div class="card shadow">
 					<img class="card-img-top" src=@product.ImagePath alt="...">
 					<div class="card-body text-center">
-						<a class="text-success" asp-action="index" asp-controller="Product" asp-route-id="@product.Id">
+						<a class="text-success" asp-action="Index" asp-controller="Product" asp-route-productId="@product.Id">
 							<h5>@product.Name</h5>
 						</a>
 						<h2 class="text-danger">@product.Cost</h2>
