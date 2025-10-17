@@ -2,16 +2,22 @@
 
 namespace Shop.Repositories;
 
-public static class CartRepository
+public interface ICartRepository
+{
+    Cart? TryGetById(string userId);
+    public void Add(Product? product, string userId);
+    static List<Cart> Carts;
+}
+public class CartRepository:ICartRepository
 {
     static List<Cart> _carts = [];
 
-    public static Cart? TryGetById(string userId)
+    public Cart? TryGetById(string userId)
     {
         return _carts.FirstOrDefault(x => x.UserId == userId);
     }
 
-    public static void Add(Product? product, string userId)
+    public void Add(Product? product, string userId)
     {
         var existingCart = TryGetById(userId);
 
@@ -27,7 +33,7 @@ public static class CartRepository
                     {
                         Product = product,
                         Id = Guid.NewGuid(),
-                        Count = 1,
+                        Count = 1, 
 
                     }
                 ]

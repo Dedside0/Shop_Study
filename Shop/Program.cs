@@ -1,3 +1,5 @@
+using Shop.Repositories;
+
 namespace Shop
 {
     public class Program
@@ -8,6 +10,8 @@ namespace Shop
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<IProductRepository, ProductRepository>();
+            builder.Services.AddScoped<ICartRepository, CartRepository>();
 
             var app = builder.Build();
 

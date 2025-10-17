@@ -6,16 +6,24 @@ namespace Shop.Controllers
 {
     public class CartController : Controller
     {
+        private readonly ICartRepository _cartRepository;
+        private readonly IProductRepository _productRepository;
+
+        public CartController(ICartRepository cartRepository, IProductRepository productRepository)
+        {
+            _cartRepository = cartRepository;
+            _productRepository = productRepository;
+        }
         public IActionResult Index()
         {
-            var cart = CartRepository.TryGetById(Constants.UserId);
+            var cart = _cartRepository.TryGetById(Constants.UserId);
             return View(cart);
         }
 
         public IActionResult Add(int productId)
         {
-            var product = ProductRepository.GetById(productId);
-            CartRepository.Add(product,Constants.UserId);
+            var product = _productRepository.GetById(productId);
+            _cartRepository.Add(product,Constants.UserId);
 
             return RedirectToAction("Index");
         }
