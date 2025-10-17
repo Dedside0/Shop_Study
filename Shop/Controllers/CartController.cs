@@ -27,5 +27,20 @@ namespace Shop.Controllers
 
             return RedirectToAction("Index");
         }
+
+        public IActionResult Remove(int productId)
+        {
+            var product = ProductRepository.GetById(productId);
+            CartRepository.Remove(product,Constants.UserId);
+
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Clear(string userId)
+        {
+            CartRepository.Clear(userId);
+
+            return RedirectToAction("Index");
+        }
     }
 }

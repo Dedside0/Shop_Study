@@ -60,4 +60,34 @@ public class InMemoryCartsRepository:ICartRepository
             }
         }
     }
+
+    public static void Remove(Product? product, string userId)
+    {
+        var existingCart = TryGetById(userId);
+
+        if (existingCart != null)
+        {
+            var existingCartItem = existingCart.Items.FirstOrDefault(x => x.Product.Id == product.Id);
+            if (existingCartItem.Count == 1)
+            {
+                DeleteCartItem(existingCart,existingCartItem);
+            }
+            else
+            {
+                existingCartItem.Count--;
+            }
+        }
+    }
+
+    public static void DeleteCartItem(Cart cart,CartItem cartItem)
+    {
+        cart.Items.Remove(cartItem);
+    }
+
+    public static void Clear(string id)
+    {
+        var existingCart = TryGetById(id);
+        if(existingCart != null) 
+            _carts.Remove(existingCart);
+    }
 }
