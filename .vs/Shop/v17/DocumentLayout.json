@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\georg\\VisualStudioCommunity\\Shop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0AA170E6-6B31-4F36-B6EA-E4077D672C1B}|Shop\\Shop.csproj|c:\\users\\georg\\visualstudiocommunity\\shop\\shop\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AA170E6-6B31-4F36-B6EA-E4077D672C1B}|Shop\\Shop.csproj|solutionrelative:shop\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AA170E6-6B31-4F36-B6EA-E4077D672C1B}|Shop\\Shop.csproj|c:\\users\\georg\\visualstudiocommunity\\shop\\shop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AA170E6-6B31-4F36-B6EA-E4077D672C1B}|Shop\\Shop.csproj|solutionrelative:shop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AA170E6-6B31-4F36-B6EA-E4077D672C1B}|Shop\\Shop.csproj|c:\\users\\georg\\visualstudiocommunity\\shop\\shop\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AA170E6-6B31-4F36-B6EA-E4077D672C1B}|Shop\\Shop.csproj|solutionrelative:shop\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AA170E6-6B31-4F36-B6EA-E4077D672C1B}|Shop\\Shop.csproj|c:\\users\\georg\\visualstudiocommunity\\shop\\shop\\models\\cartpositon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AA170E6-6B31-4F36-B6EA-E4077D672C1B}|Shop\\Shop.csproj|solutionrelative:shop\\models\\cartpositon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AA170E6-6B31-4F36-B6EA-E4077D672C1B}|Shop\\Shop.csproj|c:\\users\\georg\\visualstudiocommunity\\shop\\shop\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AA170E6-6B31-4F36-B6EA-E4077D672C1B}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AA170E6-6B31-4F36-B6EA-E4077D672C1B}|Shop\\Shop.csproj|c:\\users\\georg\\visualstudiocommunity\\shop\\shop\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AA170E6-6B31-4F36-B6EA-E4077D672C1B}|Shop\\Shop.csproj|solutionrelative:shop\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AA170E6-6B31-4F36-B6EA-E4077D672C1B}|Shop\\Shop.csproj|c:\\users\\georg\\visualstudiocommunity\\shop\\shop\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AA170E6-6B31-4F36-B6EA-E4077D672C1B}|Shop\\Shop.csproj|solutionrelative:shop\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AA170E6-6B31-4F36-B6EA-E4077D672C1B}|Shop\\Shop.csproj|c:\\users\\georg\\visualstudiocommunity\\shop\\shop\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AA170E6-6B31-4F36-B6EA-E4077D672C1B}|Shop\\Shop.csproj|solutionrelative:shop\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\georg\\VisualStudioCommunity\\Shop\\Shop\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\georg\\VisualStudioCommunity\\Shop\\Shop\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-11T21:31:37.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\georg\\VisualStudioCommunity\\Shop\\Shop\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Shop\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\georg\\VisualStudioCommunity\\Shop\\Shop\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Shop\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T21:11:32.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\georg\\VisualStudioCommunity\\Shop\\Shop\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Shop\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\georg\\VisualStudioCommunity\\Shop\\Shop\\Models\\Product.cs",
+              "RelativeToolTip": "Shop\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T21:10:13.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\georg\\VisualStudioCommunity\\Shop\\Shop\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\georg\\VisualStudioCommunity\\Shop\\Shop\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-11T21:04:52.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\georg\\VisualStudioCommunity\\Shop\\Shop\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Shop\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\georg\\VisualStudioCommunity\\Shop\\Shop\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Shop\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA1wBEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T20:59:39.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\georg\\VisualStudioCommunity\\Shop\\Shop\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\georg\\VisualStudioCommunity\\Shop\\Shop\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Shop\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-11T20:59:18.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartPositon.cs",
+              "DocumentMoniker": "C:\\Users\\georg\\VisualStudioCommunity\\Shop\\Shop\\Models\\CartPositon.cs",
+              "RelativeDocumentMoniker": "Shop\\Models\\CartPositon.cs",
+              "ToolTip": "C:\\Users\\georg\\VisualStudioCommunity\\Shop\\Shop\\Models\\CartPositon.cs",
+              "RelativeToolTip": "Shop\\Models\\CartPositon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T20:59:14.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\georg\\VisualStudioCommunity\\Shop\\Shop\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "Shop\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\georg\\VisualStudioCommunity\\Shop\\Shop\\Models\\Cart.cs",
+              "RelativeToolTip": "Shop\\Models\\Cart.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T20:59:14.159Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

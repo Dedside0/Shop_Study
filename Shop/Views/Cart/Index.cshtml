@@ -1,0 +1,69 @@
+﻿@model Cart
+
+<div class="row justify-content-evenly">
+
+    @if (Model != null && Model.Items.Count > 0)
+    {
+        <div class="col-9">
+            <table class="table table-responsive table-striped table-hover mb-5">
+                <thead>
+                    <tr align="center">
+                        <th scope="col">#</th>
+                        <th scope="col">Наименование товара</th>
+                        <th scope="col">Цена, руб.</th>
+                        <th scope="col">Количество, шт.</th>
+                        <th scope="col">Стоимость, руб.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (var i = 0; i < Model.Items.Count; i++)
+                    {
+                        <tr align="center">
+                            <td class="fw-bold">@(i + 1)</td>
+                            <td align="left">@Model.Items[i].Product.Name</td>
+                            <td align="left">@Model.Items[i].Product.Cost</td>
+                            <td>@Model.Items[i].Count</td>
+                            <td class="fw-bold">@Model.Items[i].Total</td>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <tr align="center">
+                        <th colspan="2"></th>
+                        <th colspan="2">
+                            Общая стоимость: @Model.Total
+                        </th>
+                        <th colspan="1">
+                            <a class="btn btn-success"
+                               asp-controller="Cart"
+                               asp-action="Index">
+                                Оформить заказ
+                            </a>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+    }
+    else
+    {
+        <div class="col-auto m-5">
+            <h2 class="row-title">В корзине нет товаров!</h2>
+        </div>
+
+    }
+</div>
+
+
+
+
+<div class="row justify-content-center">
+    <div class="col-auto m-5">
+        <a class="btn btn-outline-success"
+           asp-controller="Home"
+           asp-action="Index">
+            Продолжить покупки
+        </a>
+    </div>
+</div>

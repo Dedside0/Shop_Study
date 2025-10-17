@@ -1,0 +1,30 @@
+﻿@model List<Product>
+@{
+	ViewData["Title"] = "Home Page";
+}
+
+
+<div class="row">
+	@if (Model != null)
+	{
+		@foreach (var product in Model)		
+		{	
+			<div class="col-3 mb-3">
+				<div class="card shadow">
+					<img class="card-img-top" src=@product.ImagePath alt="...">
+					<div class="card-body text-center">
+						<a class="text-success" asp-action="index" asp-controller="Product" asp-route-id="@product.Id">
+							<h5>@product.Name</h5>
+						</a>
+						<h2 class="text-danger">@product.Cost</h2>
+						<a class="btn btn-success" asp-controller="Cart" asp-action="Add" asp-route-productId="@product.Id">Добавить в корзину</a>
+					</div>
+				</div>
+			</div>
+		}
+	}
+	else
+	{
+		<h2>Нет товаров для отображения!</h2>
+	}
+</div>

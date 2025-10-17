@@ -1,0 +1,39 @@
+﻿@model Product
+
+<div class="row justify-content-center">
+	@if (Model != null)
+	{
+		<div class="col-3 mb-3">
+			<div class="card h-100">
+				<img class="card-img-top" src=@Model.ImagePath alt="...">
+				<div class="card-body text-center">
+					<h4>@Model.Name</h4>
+					<h2 class="text-danger">@Model.Cost</h2>
+
+					<a class="btn btn-success" asp-controller="Cart" asp-action="Add" asp-route-productId="@Model.Id">Добавить в корзину</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-6 mb-3">
+			<div class="card h-100">
+				<div class="card-body">
+					<h6>@Model.Description</h6>
+				</div>
+			</div>
+		</div>
+        
+	}
+	else
+	{
+		<div class="col-auto m-5">
+			<h2>Такого товара не существует!</h2>
+		</div>
+	}
+</div>
+
+
+<div class="row justify-content-center">
+	<div class="col-auto m-5">
+		<a asp-controller="Home" asp-action="Index" class="btn btn-outline-success">Продолжить покупки</a>
+	</div>
+</div>
