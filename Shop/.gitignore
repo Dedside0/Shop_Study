@@ -1,0 +1,13 @@
+﻿# Rider / VS
+*.user
+*.suo
+*.userprefs
+.vs/
+.idea/
+
+# Logs
+*.log
+
+# Build artifacts
+bin/
+obj/

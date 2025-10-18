@@ -1,0 +1,99 @@
+﻿@model Shop.Models.Cart
+@{
+    ViewData["Title"] = "Оформление заказа";
+}
+
+<div class="text-center text-uppercase text-success mb-5 mt-5">
+    <h2 class="row-title">Оформление заказа</h2>
+</div>
+
+@if (Model != null && Model.Items.Count > 0)
+{
+    <div class="row justify-content-center mt-3">
+        <div class="col">
+            <table class="table table-borderless">
+                <thead>
+                    <tr align="center">
+                        <th><h2>Информация о покупателе</h2></th>
+                        <th><h2>Информация о заказе</h2></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="w-50 p-4">
+                            <p>
+                                <label>Имя</label><br />
+                                <input type="text" class="w-100" />
+                            </p>
+                            <p>
+                                <label>Адрес доставки</label><br />
+                                <input type="text" class="w-100" />
+                            </p>
+                            <p>
+                                <label>Телефон</label><br />
+                                <input type="tel" class="w-100" />
+                            </p>
+                        </td>
+
+                        <td class="w-50 p-4">
+                            <table class="table table-responsive table-striped table-hover mb-5 caption-top">
+                                <thead>
+                                    <tr align="center">
+                                        <th scope="col">#</th>
+                                        <th scope="col">Наименование товара</th>
+                                        <th scope="col">Цена, руб.</th>
+                                        <th scope="col">Количество, шт.</th>
+                                        <th scope="col">Стоимость, руб.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @for (var i = 0; i < Model.Items.Count; i++)
+                                    {
+                                        <tr align="center" class="align-baseline">
+                                            <td class="fw-bold">@(i + 1)</td>
+                                            <td align="left">@Model.Items[i].Product.Name</td>
+                                            <td align="left">@Model.Items[i].Product.Cost</td>
+                                            <td>
+                                                @Model.Items[i].Count
+                                            </td>
+                                            <td class="fw-bold">@Model.Items[i].Total</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                                <tfoot class="table-borderless ">
+                                    <tr align="center">
+                                        <th colspan="5">
+                                            Общая стоимость заказа: @Model.Total
+                                        </th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <a class="btn btn-outline-danger"
+           asp-controller="Order"
+           asp-action="Succes">
+            Оплатить заказ
+        </a>
+    </div>
+}
+else
+{
+    <div class="text-center">
+        <h2 class="row-title">Нет заказа для оформления!</h2>
+    </div>
+}
+
+<div class="text-center m-5">
+    <a class="btn btn-outline-success"
+       asp-controller="Home"
+       asp-action="Index">
+        Продолжить покупки
+    </a>
+</div>
