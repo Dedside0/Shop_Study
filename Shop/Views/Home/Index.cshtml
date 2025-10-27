@@ -17,6 +17,8 @@
 							<h5>@product.Name</h5>
 						</a>
 						<h2 class="text-danger">@product.Cost</h2>
+						
+						<a class="btn btn-success" asp-controller="Favorite" asp-action="Add" asp-route-productId="@product.Id">В избранное</a>
 						<a class="btn btn-success" asp-controller="Cart" asp-action="Add" asp-route-productId="@product.Id">Добавить в корзину</a>
 					</div>
 				</div>

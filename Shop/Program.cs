@@ -12,6 +12,7 @@ namespace Shop
             builder.Services.AddControllersWithViews();
             builder.Services.AddScoped<IProductRepository, InMemoryProductRepository>();
             builder.Services.AddScoped<ICartRepository, InMemoryCartsRepository>();
+            builder.Services.AddScoped<IFavoriteRepository, InMemoryFavoriteRepository>();
 
             var app = builder.Build();
 
