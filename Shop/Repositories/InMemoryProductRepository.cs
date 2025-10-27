@@ -2,15 +2,6 @@
 
 namespace Shop.Repositories
 {
-
-    public interface IProductRepository
-    {
-        List<Product> GetAll();
-        Product GetById(int id);
-        void Add(string name, decimal cost,   string description);
-        static List<Product> Products;
-
-    }
     public class InMemoryProductRepository: IProductRepository
     {
         private static int _instanceCounter = 0;

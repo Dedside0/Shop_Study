@@ -1,13 +1,43 @@
-﻿# Rider / VS
-*.user
-*.suo
-*.userprefs
-.vs/
-.idea/
-
-# Logs
-*.log
-
-# Build artifacts
+﻿# Build results
 bin/
 obj/
+
+# Rider / ReSharper
+.idea/
+*.sln.iml
+*.DotSettings.user
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# Logs / caches
+*.log
+*.cache
+*.db
+*.db-shm
+*.db-wal
+
+# Generated files
+*.dll
+*.exe
+*.pdb
+*.mdb
+
+# Publish output
+publish/
+wwwroot/dist/
+
+# ASP.NET temp
+*.dswa.cache.json
+apphost.exe
+
+# User secrets / local config
+secrets.json
+appsettings.*.json
